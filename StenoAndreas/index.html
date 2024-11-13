@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>Find de 3 rigtige ting til Andreas Rejse</title>
+    <link rel="stylesheet" href="css.css">
+    
+</head>
+<body>
+    <div class="game-container">
+        <h1>Gæt de 3 ting</h1>
+        <h1>Andreas skal bruge i rummet</h1>
+        <div class="items-container" id="itemsContainer">
+            <div class="item" data-id="1" data-correct="true">
+                <img src="images/spacesuit.png" alt="Rumdragt">
+            </div>
+            <div class="item" data-id="2" data-correct="true">
+                <img src="images/mad.png" alt="Mad">
+            </div>
+            <div class="item" data-id="3" data-correct="true">
+                <img src="images/ble.png" alt="Ble">
+            </div>
+            <div class="item" data-id="4" data-correct="false">
+                <img src="images/football.png" alt="Fodbold">
+            </div>
+            <div class="item" data-id="5" data-correct="false">
+                <img src="images/guitar.png" alt="Guitar">
+            </div>
+            <div class="item" data-id="6" data-correct="false">
+                <img src="images/mars1.png" alt="Mars">
+            </div>
+            <div class="item" data-id="7" data-correct="false">
+                <img src="images/passport.png" alt="Pas">
+            </div>
+            <div class="item" data-id="8" data-correct="false">
+                <img src="images/tandboerste.png" alt="Tandboerste">
+            </div>
+            <div class="item" data-id="9" data-correct="false">
+                <img src="images/telescope1.png" alt="Telescope">
+            </div>
+            <div class="item" data-id="10" data-correct="false">
+                <img src="images/kaffe.png" alt="Kaffe">
+            </div>
+        </div>
+        <div class="message" id="message"></div>
+        <button class="start-over-btn" id="startOverBtn">Start Forfra</button>
+    </div>
+    <div class="info-overlay" id="infoOverlay">
+        <div class="info-box">
+            <span class="close-btn" onclick="closeInfoBox()">&times;</span>
+            <h2 id="infoTitle"></h2>
+            <img id="infoImage" src="" alt="Item Info">
+            <p id="infoText"></p>
+        </div>
+    </div>
+    <audio id="endGameSound" src="rum.mp3"></audio>
+    <div class="astronaut-container">
+        <div class="astronaut" id="astronaut"></div>
+        <div class="astronaut-house"></div>
+    </div>
+    <div class="rocket" id="rocket"></div>
+
+    <script src="js.js"></script>
+</body>
+</html>
